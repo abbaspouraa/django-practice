@@ -1,6 +1,7 @@
 import datetime
 
 from django.db import models
+from django.db.models import UniqueConstraint
 from django.utils import timezone
 
 
@@ -22,3 +23,6 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+
+    class Meta:
+        unique_together = ('question', 'choice_text')
