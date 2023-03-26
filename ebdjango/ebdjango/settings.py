@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'django-env.eba-mi3fdaqu.us-west-2.elasticbeanstal
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
